@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  arduino:
+    image: "logankennelly/arduino-cli-esp8266:latest"
+    build:
+      context: ./
+    volumes:
+      - ../examples/hello:/home/arduino/Arduino/Projects
+
